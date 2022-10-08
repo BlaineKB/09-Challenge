@@ -55,15 +55,29 @@ const questions = () => {
       type: 'list',
       name: 'license',
       message: 'Which of the following licenses would you like to select for your project?',
+      choices: ["Apache 2.0", "MIT", "No License"]
     },
   ])
 };  
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// Create a function to write README file
+function writeToFile(data) {
+  fs.writeFile('./sample/README.md', data, err => {
+    if(err) {
+      console.log(err)
+      return
+    }
+    console.log("Created README.md")
+  })
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  questions()
+}
 
 // Function call to initialize app
 init();
+
+
+module.exports = writeToFile
