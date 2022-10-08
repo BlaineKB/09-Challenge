@@ -35,13 +35,53 @@ function renderLicenseSection(license) {
     return "";
 
   } else {
-    return " [License](#license)"
+    return "- [License](#license)"
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+  # ${data.title}
+
+  ## Table of Contents
+  - [Description](#description)
+  - [Usage](#usage)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Contribution Guidelines](#contribution-guidelines)
+  - [Testing Instructions](#testing-instructions)
+  ${renderLicenseSection(data.license)}
+  - [Contact](#contact)
+  
+
+  ## Description
+  ${data.description}
+
+  ## Usage
+  ${data.usage}
+
+  ## Features
+  ${data.features}
+
+  ## Installation
+  ${data.installation}
+
+  ## Contribution Guidelines
+  ${data.contributing}
+
+  ## Testing Instructions
+  ${data.tests}
+
+  ${renderLicenseLink(data.license)}
+  ${renderLicenseBadge(data.license)}
+
+  ## Contact
+  Contact me if you have any questions!
+
+  GitHub: https://github.com/${data.username}
+
+  Email: ${data.email}
 
 `;
 }

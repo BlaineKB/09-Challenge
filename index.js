@@ -58,6 +58,9 @@ const questions = () => {
       choices: ["Apache 2.0", "MIT", "No License"]
     },
   ])
+  .then(data => {
+    writeToFile(generateMarkdown(data))
+  })
 };  
 
 // Create a function to write README file
