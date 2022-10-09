@@ -10,5 +10,5 @@ A user starts the generator by navigating to the root directory and typing "node
 Walkthrough video: https://drive.google.com/file/d/1P062wIqyujPLFe_hdYPYtdjYetQ-dVul/view
 
 ## Screenshot of Application
-![image](https://user-images.githubusercontent.com/18688891/194732609-2b7e3475-5c52-4d55-8df1-d2074e9e514f.png)
+![image](https://user-images.githubusercontent.com/18688891/194732738-daa38324-c53e-4408-b0df-b2db558c81d5.png)
 ![image](https://user-images.githubusercontent.com/18688891/194732662-915319bb-a91f-4c53-a830-df4909bd5cd2.png)
