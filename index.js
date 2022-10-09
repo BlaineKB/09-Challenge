@@ -63,7 +63,7 @@ const questions = () => {
   })
 };  
 
-// Create a function to write README file
+// Function to write README file
 function writeToFile(data) {
   fs.writeFile('./sample/README.md', data, err => {
     if(err) {
@@ -74,7 +74,7 @@ function writeToFile(data) {
   })
 }
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 function init() {
   questions()
 }
